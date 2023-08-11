@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Lógica</title>
+    <style>
+        body{
+            background-color: rgb(215, 207, 207);
+        }
+        input{
+            width:40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Comparação</h1>
+    <hr>
+    <input type="number" id="num1">
+    <select name="operador" id="operador">
+        <option value="maior que"> > </option>
+        <option value="menor que"> < </option>
+        <option value="maior ou igual">>=</option>
+        <option value="menor ou igual"><=</option>
+        <option value="diferente">!=</option>
+        <option value="igual">==</option>
+    </select>
+    <input type="number" id="num2">
+    <input type="button" value="=" onclick="comparar();">
+    <input type="text" name="resultado" id="resultado" disabled>
+
+
+
+    <script src="./calculadora-logica.js"></script>
+</body>
+</html>
